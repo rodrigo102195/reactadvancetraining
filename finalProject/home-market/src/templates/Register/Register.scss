@@ -1,0 +1,13 @@
+@import "../common";
+
+.Register {
+  &__buttonsContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__loader {
+    margin: 20px auto 0 auto !important;
+  }
+}
+

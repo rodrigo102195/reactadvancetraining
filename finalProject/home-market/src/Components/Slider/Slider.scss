@@ -1,0 +1,8 @@
+@import "../../variables";
+
+.Slider {
+  &__arrowIcon {
+    color: $primary-red;
+    cursor: pointer;
+  }
+}

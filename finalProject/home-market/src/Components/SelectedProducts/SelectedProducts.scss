@@ -1,0 +1,55 @@
+@import "../../variables";
+
+.SelectedProducts {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  border: 1px solid black;
+  width: 50%;
+  background-color: white;
+  z-index: 100;
+  &__costContainer {
+    background-color: $primary-background-grayStrong;
+    padding: 10px;
+  }
+  &__totalSpan {
+    color: black;
+    font-weight: bold;
+    font-size: $font-size-desktop;
+  }
+  &__priceSpan {
+    font-size: $font-size-desktop;
+    color: $primary-green;
+    font-weight: bold;
+  }
+  &__finishPurchase {
+    margin: 10px auto;
+  }
+  &--colorBlack{
+    color: black;
+  }
+  &__totalContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__horizontalRuler {
+    border: 1.5px solid $primary-background;
+    width: 95%;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+.SelectedProducts{
+  top: 69px;
+  width: 40%;
+  &__totalSpan {
+    font-size: $font-size-big;
+  }
+  &__priceSpan {
+    font-size: $font-size-extra-big;
+  }
+  &__horizontalRuler {
+    border: 1px solid $primary-background;
+  }
+}
+}

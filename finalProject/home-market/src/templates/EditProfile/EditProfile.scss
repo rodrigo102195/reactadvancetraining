@@ -1,0 +1,29 @@
+@import "../common";
+
+.EditProfile {
+  &__avatar {
+    cursor: pointer;
+    margin: 0 auto;
+    width: 20%;
+  }
+
+  &__buttonsContainer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__loader {
+    margin: 20px auto 0 auto !important;
+  }
+
+  &__checkboxContainer {
+    margin-top: 20px;
+    display: flex;
+  }
+
+  &__toggleContainer {
+    display: flex;
+    align-items: center;
+  }
+}
+

@@ -1,0 +1,52 @@
+@import "../common.scss";
+
+.Purchase {
+  &__goToEditProfile {
+    color: $primary-red;
+    margin-top: 10px;
+    &:hover {
+      color: $primary-red;
+    }
+  }
+  &__calendar {
+    margin: 0 auto;
+  }
+  &__loader{
+    margin: 20px auto 0 auto !important;
+  }
+  &__purchasedImage {
+    width: 20%;
+  }
+
+}
+.modal {
+  &__image {
+    width: 30%;
+  }
+  #clarification {
+    text-align: center;
+  }
+}
+.ui{
+  &.modal {
+    .header{
+      text-align: center;
+    }
+    .content{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .actions{
+      display: flex;
+      justify-content: center;
+      .ButtonCustomized {}
+    }
+  }
+}
+
+@media only screen and (max-width: $desktop-width) {
+  #clarification, .ButtonCustomized {
+    height: auto;
+  }
+}

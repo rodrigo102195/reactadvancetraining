@@ -1,0 +1,18 @@
+.info {
+  width: 500px;
+  border: 3px solid white;
+  padding: 20px;
+  &__content {
+    font-size: 20px;
+    padding: 20px;
+  }
+  &__title {
+    margin: 5px auto;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+  }
+  &__text--margin {
+    margin-top:10px;
+  }
+}

@@ -1,0 +1,84 @@
+@import "../variables";
+
+.floatedContainer {
+  width: 90%;
+  position: relative;
+  top: -25px;
+  margin: 0 auto -25px auto;
+  padding: 2%;
+  background-color: white;
+}
+
+.centered {
+  margin: 0 auto;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.backgroundPrimaryRed {
+  background-color: $primary-red;
+}
+
+.form {
+  &__label {
+    color: black;
+    font-size: $font-size-semi-small;
+    &--errorColor {
+      color: red;
+    }
+    margin: 5px 0;
+  }
+
+  &__button {
+    margin: 15px auto;
+  }
+
+  &__container--flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    text-align: center;
+    color: black;
+    font-size: $font-size;
+  }
+
+  &--centerText {
+    text-align: center;
+  }
+}
+
+.noDisplayMobile, .noDisplayMobile--flex {
+  display: none;
+}
+
+
+@media only screen and (min-width: $desktop-width) {
+  .floatedContainer {
+    top: -100px;
+    margin-bottom: -100px;
+  }
+  .form {
+    &__title {
+      font-size: $font-size-big;
+    }
+    &__label {
+      font-size: $font-size-desktop;
+      margin: 10px 0;
+    }
+
+    &__button {
+      margin: 30px auto;
+    }
+  }
+  .noDisplayMobile {
+    display: block;
+  }
+  .noDisplayMobile--flex {
+    display: flex;
+  }
+}
+

@@ -1,0 +1,41 @@
+@import "../../variables";
+
+.Group {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  cursor: pointer;
+  &__circle {
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px; 
+    padding: 10px;
+    border: 1px solid $primary-red;
+    background-color: $primary-background;
+    &--selected {
+      background-color: $primary-red;
+    }
+  }
+  &__horizontalRuler {
+    border: 2px solid $primary-red;
+    width: 100%;
+  }
+  &__label {
+    text-align: center
+  }
+  &__image {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .Group {
+    &__circle {
+      width: 80px;
+      height: 80px;
+    }
+
+  }
+ }

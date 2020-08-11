@@ -1,0 +1,15 @@
+@import '../../constants';
+
+.form {
+  &__buttonSubmit{
+      .ui.button {
+        font-size: large;
+      }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .ui.label {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,68 @@
+@import "../../variables";
+
+.CategoryImage {
+  width: 90%;
+  height: 150px;
+  margin: 20px auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  box-shadow: inset 0 -30px 30px -10px #000000;
+  position: relative;
+  &:after {
+    content: '\A';
+    position: absolute;
+    width: 100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: all 1s;
+  }
+  &:hover:after{
+    opacity:1;
+  }
+  &:hover > .visibleOnHover{
+    display: block;
+    justify-content: unset;
+    &:last-child {
+      font-weight: bold;
+    }
+  }
+  &:hover > .invisibleOnHover {
+    display: none;
+  }
+  &:hover {
+    border: 1px solid blue;
+    justify-content: unset;
+    flex-direction: column;
+  }
+}
+
+.invisibleOnHover {
+  font-weight: bold;
+  color: white;
+  font-size: $font-size-big;
+  padding-bottom: 10px;
+}
+
+.visibleOnHover {
+  display: none;
+  color:white;
+  font-size: $font-size-desktop;
+  margin: 3px;
+  z-index: 50;
+  cursor:pointer;
+  &:hover {
+    font-weight: bold;;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .CategoryImage {
+    width: 30%;
+  }
+}

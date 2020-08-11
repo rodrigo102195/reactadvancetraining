@@ -1,0 +1,36 @@
+@import "../../variables";
+
+.ButtonCustomized {
+  &--primary {
+    background-color: $primary-red;
+    color: white;
+  }
+  &--secondary {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+  }
+  &--disabled {
+    background-color: $primary-color;
+    color:white;
+    cursor: default;
+  }
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 25px;
+  border-radius: 999px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+@media only screen and (min-width: 992px) {
+  .ButtonCustomized {
+    width: 20rem;
+    height: 5rem;
+  }
+}

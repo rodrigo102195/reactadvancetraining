@@ -1,0 +1,86 @@
+@import "../../variables";
+
+.Product {
+  display:flex;
+  flex-direction: column;
+  width:25%;
+  background-color: white;
+  margin: 20px 5px;
+  box-shadow:1px 1px 10px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  &__image {
+    width:100%;
+  }
+  &__topContainer {
+    height: 150px;
+  }
+  &__name {
+    text-align:center;
+    color: black;
+  }
+  &__refPrice {
+    text-align: center;
+  }
+  &__currentPrice {
+    font-weight: bold;
+    color: $primary-green;
+    font-size: $font-size;
+    margin-right: 5px;
+  }
+  &__priceContainer {
+    display: flex;
+    justify-content: center;
+  }
+  &__normalPrice{
+    text-decoration: line-through;
+  }
+  &__horizontalRuler {
+    border: 1.5px solid $primary-background;
+    width: 95%;
+  }
+  &__nameContainer {
+    display:flex;
+    justify-content: center;
+  }
+}
+.buy__span, .noStock__span, .Product__Iwantit{
+  margin: 0 10px 10px 0;
+  text-align: right;
+}
+
+.buy__span, .noStock__span {
+  text-transform: uppercase;
+}
+
+.noStock__span {
+  color: $primary-red;
+}
+
+.buy__span {
+  cursor: pointer;
+  &:hover {
+    font-weight: bold;
+  }
+}
+@media only screen and (min-width: $tablet-width) {
+  .Product {
+    &__topContainer {
+      height: 250px;
+    }
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .Product {
+    width: 15%;
+    margin: 20px 10px;
+    &__currentPrice {
+      font-size: $font-size-big;
+    }
+    &__topContainer {
+      height: 325px;
+    }
+  }
+
+}
+

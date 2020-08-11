@@ -1,0 +1,28 @@
+.buttonsInteraction {
+  .ui.button {
+    font-size: large;
+  }
+}
+
+.categorySelected {
+  margin: 20px auto;
+}
+
+.play__title {
+  text-align: center;
+}
+
+.category {
+  &__span, &__checkbox.ui.fitted.toggle.checkbox {
+    width:50%;
+  }
+
+  &__span {
+    padding-left: 10%;
+  }
+
+  &__checkbox.ui.fitted.toggle.checkbox {
+    padding-left: 20%;
+  }
+}
+

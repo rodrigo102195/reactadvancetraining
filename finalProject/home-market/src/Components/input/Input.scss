@@ -1,0 +1,27 @@
+@import "../../variables";
+
+.InputCustomized {
+  border: 1px solid black;
+  border-radius: 999px;
+  width: 200px;
+  height: 15px;
+  background-color: $primary-background;
+  outline: none;
+  padding-left: 5px;
+}
+
+@media only screen and (min-width: 992px) {
+  .InputCustomized {
+    width: 600px;
+    height: 40px;
+  }
+}
+
+.borderColor{
+  &--black{
+    border-color: black;
+  }
+  &--red {
+    border-color: red;
+  }
+}

@@ -1,0 +1,40 @@
+@import "../../variables";
+
+.CounterStock {
+  width: 90%;
+  max-width: 200px;
+  border-radius: 500px;
+  margin: auto;
+  background-color: $primary-background;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  &__amountSpan {
+    font-weight: bold;
+  }
+  &__iconPlus, &__iconMinus{
+    color: $primary-red;
+    cursor: pointer;
+  }
+  &__iconPlus--disabled, &__iconMinus--disabled {
+      color:$primary-color;
+      cursor: initial;
+  }
+
+  &__buySpan, &__noStockSpan {
+    text-transform: uppercase;
+    margin: 0 10px 10px 0;
+    text-align: right;
+  }
+
+  &__buySpan {
+    cursor: pointer;
+    &:hover {
+      font-weight: bold;
+    }
+  }
+
+  &__noStockSpan {
+    color: $primary-red;
+  }
+}

@@ -1,0 +1,22 @@
+$back-card--color: #03dcf4;
+$front-card--color: #ffb300;
+
+%size-card {
+  width: 125px;
+  height: 125px;
+}
+
+.card{
+  @extend %size-card;
+  &__content {
+    background-color: $front-card--color;
+    @extend %size-card;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__back {
+    background-color: $back-card--color;
+  }
+}

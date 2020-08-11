@@ -1,0 +1,46 @@
+.App {
+  &__headerImage {
+    width: 100%;
+  }
+
+  &__logo {
+    position: absolute;
+    width: 14%;
+    right: 10px;
+    top: 10px;
+  }
+
+  &__footerMedia {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin: 5px 0;
+    background-color: white;
+  }
+
+  &__footerText {
+    text-align: center;
+    font-size: 0.5rem;
+  }
+
+  &__footer {
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .App {
+      &__footerText {
+        font-size: inherit;
+      }
+      &__footerMedia {
+        padding: 25px;
+      }
+  }
+  .socialIcon {
+    margin: 0 5px !important;
+  }
+}
+
+
+

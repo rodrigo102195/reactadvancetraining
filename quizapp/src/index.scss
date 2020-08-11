@@ -1,0 +1,26 @@
+@import 'constants';
+
+#root {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:100%
+}
+
+body {
+  margin: 0;
+  background-color: #231e4cb0;
+  font-family: sans-serif;
+}
+
+@media (min-width: $desktop-width) {
+
+  * {
+    font-size: 2rem; // change size to what you need for you page
+  }
+
+  .segment {
+    width: 50rem;
+  }
+
+}

@@ -1,0 +1,34 @@
+.board {
+  width: 700px;
+  height: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.content {
+  display: flex;
+  margin: 5% 0;
+}
+
+.changePlayer {
+  &__input {
+    width: 50%;
+    color:black;
+    margin-right: 20px;
+    font-size:inherit;
+  }
+  &__btn {
+    width: 100px;
+    color: black;
+    font-size: inherit;
+  }
+}
+
+.positionInfo {
+  &__table {
+    width: 100%;
+    border-spacing: 40px;
+  }
+}

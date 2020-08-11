@@ -1,0 +1,36 @@
+@import "../../variables";
+
+.content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 50px;;
+  .input {
+    flex: 1 1 auto;
+    margin: 0;
+    padding: 5px;
+    border: none;
+    box-shadow: none;
+    height: 100%;
+    outline: none;
+    border-radius: 50px;
+  }
+  &__image {
+    width: 15px;
+    margin-right:5px;   
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .content {
+    .input {
+      width: 300px;
+      padding: 10px;
+    }
+    &__image {
+      width: 30px;
+      margin-right:10px;   
+    }
+  }
+ }

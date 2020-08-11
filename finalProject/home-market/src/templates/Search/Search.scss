@@ -1,0 +1,35 @@
+@import "../common.scss";
+
+.Search {
+  &__title {
+    text-transform: uppercase;
+    font-size: $font-size-desktop;
+  }
+  &__subtitle{
+    padding-bottom: 20px;
+    font-size: $font-size;
+  }
+
+  &__listContainer{
+    display:flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  &__loader {
+    margin: 20px auto 0 auto !important;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .Search {
+    &__title {
+      font-size: $font-size-extra-big;
+    }
+    &__subtitle {
+      font-size: $font-size-desktop;
+    }
+  }
+}

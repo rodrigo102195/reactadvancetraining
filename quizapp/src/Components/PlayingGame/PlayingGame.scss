@@ -1,0 +1,44 @@
+  $color-fail: #fa8072;
+  $color-correct: green;
+
+  .ui.button {
+    font-size: large;
+  }
+
+  .field{
+    margin-bottom: 10px;
+  }
+
+  .answerAction {
+
+    .ui.button {
+      background-color: lightblue;
+    }
+
+    input, button{
+      font-size: 1.5rem;
+    }
+
+  }
+
+  .answerText {
+    &__span{
+
+      &--fail {
+        color: $color-fail;
+      }
+
+      &--correct {
+        color: $color-correct;
+      }
+
+      &--display {
+        display: block;
+      }
+
+      &--hidden {
+        display: none;
+      }
+
+    }
+  }

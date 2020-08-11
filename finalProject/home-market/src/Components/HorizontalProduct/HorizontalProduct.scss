@@ -1,0 +1,37 @@
+@import "../../variables";
+
+.HorizontalProduct {
+  display:flex;
+  justify-content: space-between;
+  padding: 10px;
+  &__image {
+    width: 50%;
+  }
+
+  &__firstContainer {
+    display: flex;
+    align-items: center;
+  }
+  &__partialCost {
+    align-self: center;
+    font-weight: bold;
+    color: black;
+  }
+
+  &__secondContainer {
+    width: 100%;
+    text-align:center
+  }
+
+  &__nameSpan {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+.HorizontalProduct {
+  &__image {
+    width: 30%;
+  }
+}
+}

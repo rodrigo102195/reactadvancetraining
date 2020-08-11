@@ -1,0 +1,54 @@
+  @import "../common";
+  
+  .Login{
+    &__title {
+      text-align: center;
+      color: black;
+      font-size: $font-size;
+    }
+    &__button {
+      align-self: center;
+    }
+
+    &__moreOptionsContainer {
+      display: flex;
+      justify-content: space-between;
+      &--fontSize, &--fontSize:hover{
+        font-size: $font-size-small;
+      }
+      margin-top: 10px;
+    }
+    &__registerContainer {
+      &--margin {
+        margin-right: 5px;
+      }
+    }
+    &__registerText {
+      color: red;
+      &:hover {
+        color: red;
+      }
+    }
+    &__error {
+      margin: 10px auto 0 auto;
+    }
+
+  }
+
+  @media only screen and (min-width: $desktop-width) {
+    .Login{
+      &__moreOptionsContainer {
+        &--fontSize, &--fontSize:hover{
+          font-size: 1.2rem;
+        }
+      }
+      &__title {
+        font-size: $font-size-big;
+      }
+      
+      &__moreOptionsContainer {
+        margin-top: 20px;
+      }
+
+    }
+  }

@@ -1,0 +1,100 @@
+@import "../common";
+
+.section {
+  &__title{
+    &::before,
+    &::after {
+      display: inline-block;
+      content: "";
+      border-top: .1rem solid red;
+      width: 3rem;
+      margin: 0 1rem;
+      transform: translateY(-0.5rem);
+    }
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__text{
+    text-align: center;
+  }
+}
+
+.aboutUs {
+  &__text {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__logo {
+    width: 25%;
+    margin-bottom: 10px;
+  }
+}
+
+.benefits {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  text-align:center;
+  margin: 20px 0;
+  padding: 20px 20px 0 20px;
+
+  &__title {
+    color: black;
+    margin: 5px 0;
+    text-transform: uppercase;
+  }
+  &__image {
+    height: 30%;
+    display: block;
+    margin: 0 auto 10px auto;
+  }
+  &__item {
+    width: 50%;
+    padding: 0 10px;
+  }
+
+  &--noColor {
+    background-color: inherit;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .section {
+    &__title {
+      font-size: 3rem;
+    }
+
+    &__text {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+
+  .benefits {
+    flex-wrap: nowrap;
+    padding: 40px;
+    &__image {
+      width: unset;
+      height: 40%;
+    }
+  }
+
+  .searchBenefits{
+    &__text {
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    &__image {
+      margin-bottom: 50px;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@import "../common.scss";
+
+.Catalog {
+  &__title {
+    text-align: center;
+  }
+
+  &__subtitle {
+    font-weight: normal;
+    text-align: center
+  }
+
+  &__offersContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.CatalogCategories {
+  &__containerTitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    align-items: baseline;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: $font-size-huge;
+  }
+  &__amountSpan {
+    color: $primary-red;
+  }
+}
+
+.group{
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.listProducts{
+  &__container{
+    display:flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .CatalogCategories {
+    &__title {
+      margin: 20px;
+    }
+    &__containerImages {
+      flex-direction: row;
+      display:flex;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+  }
+ }

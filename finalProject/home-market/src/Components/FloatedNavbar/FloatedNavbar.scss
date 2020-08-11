@@ -1,0 +1,111 @@
+@import "../../templates/common.scss";
+
+.navbar {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  ul {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    position: absolute;
+    padding-left: 0;
+    margin: 0;
+    z-index: 100;
+    top: 39px;
+    left: 0;
+    li {
+      &:first-child {
+        background-color: $primary-background;
+        color: black;
+        display: flex;
+        justify-content: space-between;
+      }
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      a:hover,a:focus{
+        font-weight: normal;
+      }
+    }
+  }
+
+  &__secondOptions {
+    font-weight: bold;
+    margin-left: 10px;
+  }
+
+  &__imageItem {
+    width: 15px;
+    cursor:pointer;
+    margin-right: 10px;
+    &--normalPointer {
+      cursor: initial;
+    }
+  }
+
+  &__leftSideContainer {
+    display:flex;
+    align-items: center;
+  }
+
+  &__rightSideContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  &__listItemLeftSide {
+    display: flex;
+    align-items: center;
+  }
+
+  &__greetingText {
+    margin-left: 20px;
+    font-weight: bold;
+    color: white;
+  }
+
+  &__shoppingCart {
+    width: 20px;
+    cursor: pointer;
+  }
+
+  &__searchBar {
+    margin-right: 20px;
+  }
+}
+
+.floatedContainer {
+  &.noPadding{
+    padding: 0;
+  }
+}
+
+#Layer_1 {
+  fill:white;
+  width: 20px;
+  height: auto;
+  cursor: pointer;
+  user-select: none;
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .navbar {
+    &__imageItem {
+      width: 30px;
+    }
+    &__shoppingCart {
+      width: 40px;
+    }
+    ul {
+      top: 60px;
+      width: 20%;
+    }
+  }
+  #Layer_1 {
+    width: 50px;
+  }
+}

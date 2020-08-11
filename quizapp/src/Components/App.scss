@@ -1,0 +1,11 @@
+@import '../constants';
+
+.App {
+  width: 100%;
+}
+
+@media (min-width: $desktop-width) {
+ .App{ 
+   width: auto;
+  }
+}
